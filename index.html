@@ -39,14 +39,14 @@
       </div>
       <div class="flex-1 justify-start md:justify-center w-[180px] md:w-full">
         <label class="border border-gray-400 bg-gray-500 rounded-full w-full lg:w-3/4 flex items-center gap-1">
-          <input type="text" class="w-full border-none outline-none bg-gray-100 text-white pl-3 py-2 rounded-l-full" placeholder="Search" />
-          <span class="px-3 md:px-4 py-2 text-xl text-white">
+          <input id="search-text" type="text" class="w-full border-none outline-none bg-gray-100 text-[#252525] font-medium px-3 py-2 rounded-l-full" placeholder="Search" />
+          <button id="search-btn" class="px-3 md:px-4 py-2 text-xl text-white">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="h-5 w-5 opacity-70">
               <path fill-rule="evenodd"
                 d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z"
                 clip-rule="evenodd" />
             </svg>
-          </span>
+          </button>
         </label>
       </div>
       <div class="md:flex-1 justify-end">
@@ -89,30 +89,34 @@
     </section>
     <!-- Categories section  -->
 
+    <!-- spinner animation  -->
+    <section class="container mx-auto bg-white ">
+      <div id="spinner-container" class="container py-10 mx-auto animate-pulse grid grid-cols-1 gap-8 mt-8 md:grid-cols-2 lg:grid-cols-4">
+       
+      </div>
+    </section>
+    <!-- spinner animation  -->
+
     <!-- Videos section  -->
      <section id="videos-container" class="container mx-auto mt-10 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
 
-      <!-- <div class="card-compact bg-base-100 w-96">
-        <figure>
-          <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" alt="" class="rounded-md" />
-        </figure>
-        <div class="flex gap-2 py-3">
-         <div>
-            <img src="./asstes/fav.png" alt="" class="w-10 rounded-full">
-         </div>
-         <div>
-            <h2 class="card-title">Shoes!</h2>
-            <p>
-              <span>Name</span>
-              <span></span>
-            </p>
-            <p>95k views</p>
-         </div>
-        </div>
-      </div> -->
-
      </section>
     <!-- Videos section  -->
+
+     <!-- Modal show  -->
+      <dialog id="customModal" class="modal">
+        <div class="modal-box">
+          <div id="modal-box">
+
+          </div>
+          <div class="modal-action">
+            <form method="dialog">
+              <button class="btn">Close</button>
+            </form>
+          </div>
+        </div>
+      </dialog>
+
    </main>
 
    <!-- Js file  -->

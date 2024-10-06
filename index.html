@@ -63,6 +63,9 @@
             <li><a>Logout</a></li>
           </ul>
         </div>
+        <div>
+          <button id="sort-btn" class="btn btn-error ml-3">Sort</button>
+        </div>
         </div>
         <!-- <div class="dropdown">
           <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -84,7 +87,7 @@
     <!-- Categories section  -->
     <section id="catagories-container" class="container mx-auto justify-center py-5 flex gap-2">
       <div>
-        <button onclick="allVideos()" class="py-2 px-5 font-medium bg-[#dedede] rounded">All</button>
+        <button id="all-btn" onclick="allVideos()" class="category-btn py-2 px-5 font-medium bg-[#dedede] rounded">All</button>
       </div>
     </section>
     <!-- Categories section  -->
@@ -99,19 +102,19 @@
 
     <!-- Videos section  -->
      <section id="videos-container" class="container mx-auto mt-10 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
-
+        
      </section>
     <!-- Videos section  -->
 
      <!-- Modal show  -->
       <dialog id="customModal" class="modal">
         <div class="modal-box">
-          <div id="modal-box">
+          <div id="modal-box" class="space-y-3">
 
           </div>
-          <div class="modal-action">
+          <div class="modal-action flex justify-center">
             <form method="dialog">
-              <button class="btn">Close</button>
+              <button class="py-2 px-6 bg-[#FF1F3D] font font-medium text-white rounded-md">Close</button>
             </form>
           </div>
         </div>
